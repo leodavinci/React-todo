@@ -13,10 +13,12 @@ var AddTodo = React.createClass({
     },
     render: function() {
         return (
-            <form onSubmit={this.onAddNewTodo}>
-                <input type="text" ref="todo" placeholder="add something..."/>
-                <button className="button expanded">Add New Todo</button>
-            </form>
+            <div className="container__footer">
+                <form onSubmit={this.onAddNewTodo}>
+                    <input type="text" ref="todo" placeholder="add something..."/>
+                    <button className="button expanded">Add New Todo</button>
+                </form>
+            </div>
         );
     }
 });
