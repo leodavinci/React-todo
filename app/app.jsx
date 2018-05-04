@@ -10,10 +10,6 @@ store.subscribe(() => {
     console.log('New state', store.getState());
 });
 
-store.dispatch(actions.addTodo('cleaning the yard'));
-store.dispatch(actions.setSearchText('yard'));
-store.dispatch(actions.toggleShowCompleted());
-
 // Load foundation
 require('style!css!foundation-sites/dist/foundation.min.css')
 $(document).foundation();
